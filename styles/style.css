@@ -1,0 +1,71 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #F3EFEC;
+  --text-color: #312A4E;
+  --accent-color: #ffab6b;
+  --main-font: Raleway;
+  --accent-font: STIX Two Text;
+}
+
+.page {
+  min-inline-size: 360px;
+  margin: 0;
+  color: var(--text-color, #312A4E);
+  background-color: var(--bg-color, #F3EFEC);
+  font-family: var(--main-font, sans-serif);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+p,
+h1,
+h2,
+h3,
+blockquote,
+ul,
+ol,
+li,
+figure {
+  margin: 0;
+}
+
+.header {
+  padding-block-start: 10%;
+}
+
+.heading {
+  font-family: var(--accent-font);
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 90%; /* 27px */
+  text-align: center;
+}
+
+.content-section {
+  border: 1px solid #000;
+  padding: 0 5vi;
+}
+
+.header__title{
+  margin-block-end: 40px;
+  font-size: clamp(3.75rem, 2.5rem + 5.5556vw, 7.5rem);
+}
+
+.content__title {
+  margin: 7% 0 2.5%;
+  font-size: 30px;
+}
+
+.content__text-block {
+  font-size: 18px;
+}
+.content__text-block .content__paragraph:not(:last-of-type) {
+  margin-block-end: 1.5em;
+}
